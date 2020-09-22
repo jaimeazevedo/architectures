@@ -15,6 +15,7 @@
 		97A6DE46251A658800F3BFC7 /* MVVMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE45251A658800F3BFC7 /* MVVMCUITests.swift */; };
 		97A6DE5F251A68C600F3BFC7 /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */; };
 		97A6DE67251A6A5D00F3BFC7 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */; };
+		97A6DE6F251A6B9400F3BFC7 /* MenuResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE6E251A6B9400F3BFC7 /* MenuResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		97A6DE47251A658800F3BFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
 		97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		97A6DE6E251A6B9400F3BFC7 /* MenuResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */,
+				97A6DE6E251A6B9400F3BFC7 /* MenuResultsController.swift */,
 				97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */,
 			);
 			path = MenuView;
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A6DE5F251A68C600F3BFC7 /* MenuCollectionViewController.swift in Sources */,
+				97A6DE6F251A6B9400F3BFC7 /* MenuResultsController.swift in Sources */,
 				97A6DE24251A658800F3BFC7 /* AppDelegate.swift in Sources */,
 				97A6DE26251A658800F3BFC7 /* SceneDelegate.swift in Sources */,
 				97A6DE67251A6A5D00F3BFC7 /* MenuViewModel.swift in Sources */,

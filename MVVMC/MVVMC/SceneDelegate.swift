@@ -20,8 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
 
+        let resultsController = MenuResultsController()
+        let viewModel = MenuViewModel(resultsController: resultsController)
+
         let rootViewController = MenuCollectionViewController()
-        rootViewController.open(MenuViewModel())
+        rootViewController.open(viewModel)
 
         let navController = UINavigationController(rootViewController: rootViewController)
         navController.navigationBar.prefersLargeTitles = true

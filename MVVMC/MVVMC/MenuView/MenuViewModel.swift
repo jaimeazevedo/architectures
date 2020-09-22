@@ -7,4 +7,9 @@
 
 final class MenuViewModel {
     let title = "Welcome"
+    let resultsController: MenuResultsController
+
+    init(resultsController: MenuResultsController) {
+        self.resultsController = resultsController
+    }
 }

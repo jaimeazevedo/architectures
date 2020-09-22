@@ -26,8 +26,24 @@ final class MenuCollectionViewController: UICollectionViewController {
 // MARK: - Public API
 extension MenuCollectionViewController {
     func open(_ viewModel: MenuViewModel) {
-        self.viewModel = viewModel
+        loadViewIfNeeded()
+
+        unbind()
 
         navigationItem.title = viewModel.title
+
+        bind(viewModel: viewModel)
+    }
+}
+
+// MARK: - Bindings
+private extension MenuCollectionViewController {
+    func bind(viewModel: MenuViewModel) {
+        self.viewModel = viewModel
+    }
+
+    func unbind() {
+        collectionView.delegate = nil
+        collectionView.dataSource = nil
     }
 }
