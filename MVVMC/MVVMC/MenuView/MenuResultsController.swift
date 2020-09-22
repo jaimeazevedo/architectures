@@ -38,7 +38,7 @@ private extension MenuResultsController {
             (
                 .items,
                 [
-                    .addItem(ViewModel(title: NSLocalizedString("Open tasks", comment: ""))),
+                    .openItems(ViewModel(title: NSLocalizedString("Open tasks", comment: ""))),
                     .openLastItem(ViewModel(title: NSLocalizedString("Open last task", comment: "")))
                 ]
             ),
@@ -47,5 +47,16 @@ private extension MenuResultsController {
                 [.addItem(ViewModel(title: NSLocalizedString("Add task", comment: "")))]
             )
         ]
+    }
+}
+
+// MARK: - TypedResultsController
+extension MenuResultsController {
+    func object(at indexPath: IndexPath) -> Row {
+        return elements[indexPath.section].1[indexPath.row]
+    }
+
+    func indexPath(for object: Row) -> IndexPath? {
+        fatalError("Not implemented.")
     }
 }

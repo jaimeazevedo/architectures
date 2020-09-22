@@ -72,6 +72,8 @@ private extension MenuCollectionViewController {
 
         collectionView.delegate = nil
         collectionView.dataSource = nil
+
+        viewModel = nil
     }
 }
 
@@ -100,19 +102,41 @@ private extension MenuCollectionViewController {
             collectionView: collectionView
         ) { collectionView, indexPath, object in
             switch object {
-            case let .openItems(viewModel):
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: disclosureCellRegistration, for: indexPath, item: viewModel
-                )
-            case let .openLastItem(viewModel):
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: disclosureCellRegistration, for: indexPath, item: viewModel
-                )
+            case let .openItems(viewModel), let .openLastItem(viewModel):
+                return collectionView
+                    .dequeueConfiguredReusableCell(using: disclosureCellRegistration, for: indexPath, item: viewModel)
+
             case let .addItem(viewModel):
-                return collectionView.dequeueConfiguredReusableCell(
-                    using: plainCellRegistration, for: indexPath, item: viewModel
-                )
+                return collectionView
+                    .dequeueConfiguredReusableCell(using: plainCellRegistration, for: indexPath, item: viewModel)
             }
+        }
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension MenuCollectionViewController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+
+        guard let viewModel = viewModel else {
+            return
+        }
+
+        switch viewModel.resultsController.object(at: indexPath) {
+        case .addItem:
+            break
+
+        case .openItems:
+            let resultsController = ItemsResultsController()
+            let viewModel = ItemsViewModel(resultsController: resultsController)
+            let viewController = ItemsCollectionViewController()
+            viewController.open(viewModel)
+
+            navigationController?.pushViewController(viewController, animated: true)
+
+        case .openLastItem:
+            break
         }
     }
 }
