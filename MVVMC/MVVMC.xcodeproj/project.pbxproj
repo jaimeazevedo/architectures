@@ -14,6 +14,7 @@
 		97A6DE3B251A658800F3BFC7 /* MVVMCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE3A251A658800F3BFC7 /* MVVMCTests.swift */; };
 		97A6DE46251A658800F3BFC7 /* MVVMCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE45251A658800F3BFC7 /* MVVMCUITests.swift */; };
 		97A6DE5F251A68C600F3BFC7 /* MenuCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */; };
+		97A6DE67251A6A5D00F3BFC7 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		97A6DE45251A658800F3BFC7 /* MVVMCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCUITests.swift; sourceTree = "<group>"; };
 		97A6DE47251A658800F3BFC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewController.swift; sourceTree = "<group>"; };
+		97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 		97A6DE5D251A68A400F3BFC7 /* MenuView */ = {
 			isa = PBXGroup;
 			children = (
+				97A6DE66251A6A5D00F3BFC7 /* MenuViewModel.swift */,
 				97A6DE5E251A68C600F3BFC7 /* MenuCollectionViewController.swift */,
 			);
 			path = MenuView;
@@ -286,6 +289,7 @@
 				97A6DE5F251A68C600F3BFC7 /* MenuCollectionViewController.swift in Sources */,
 				97A6DE24251A658800F3BFC7 /* AppDelegate.swift in Sources */,
 				97A6DE26251A658800F3BFC7 /* SceneDelegate.swift in Sources */,
+				97A6DE67251A6A5D00F3BFC7 /* MenuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

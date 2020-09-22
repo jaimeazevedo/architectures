@@ -20,8 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
 
+        let rootViewController = MenuCollectionViewController()
+        rootViewController.open(MenuViewModel())
+
+        let navController = UINavigationController(rootViewController: rootViewController)
+        navController.navigationBar.prefersLargeTitles = true
+
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = MenuCollectionViewController()
+        window?.rootViewController = navController
         window?.makeKeyAndVisible()
     }
 
