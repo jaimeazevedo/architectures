@@ -142,3 +142,23 @@ private extension ItemsCollectionViewController {
         }
     }
 }
+
+// MARK: - CollectionViewDelegate
+extension ItemsCollectionViewController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        collectionView.deselectItem(at: indexPath, animated: true)
+
+        guard let viewModel = viewModel else {
+            return
+        }
+
+        switch viewModel.resultsController.object(at: indexPath) {
+        case .item:
+            let resultsController = ItemDetailResultsController()
+            let viewModel = ItemDetailViewModel(resultsController: resultsController)
+            let viewController = ItemDetailCollectionViewController()
+            viewController.open(viewModel)
+            navigationController?.pushViewController(viewController, animated: true)
+        }
+    }
+}

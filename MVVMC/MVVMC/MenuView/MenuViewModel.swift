@@ -5,8 +5,10 @@
 //  Created by Jaime Azevedo on 22/09/2020.
 //
 
+import Foundation
+
 final class MenuViewModel {
-    let title = "Welcome"
+    let title = NSLocalizedString("Welcome", comment: "")
     let resultsController: MenuResultsController
 
     init(resultsController: MenuResultsController) {

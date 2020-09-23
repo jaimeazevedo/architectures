@@ -74,3 +74,14 @@ private extension ItemsResultsController {
         return [(.items, sortedViewModels)]
     }
 }
+
+// MARK: - TypedResultsController
+extension ItemsResultsController {
+    func object(at indexPath: IndexPath) -> Row {
+        return elements[indexPath.section].1[indexPath.row]
+    }
+
+    func indexPath(for object: Row) -> IndexPath? {
+        fatalError("Not implemented.")
+    }
+}

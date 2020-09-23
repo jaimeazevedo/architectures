@@ -19,6 +19,9 @@
 		97A6DE82251A9DE100F3BFC7 /* ItemsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE81251A9DE100F3BFC7 /* ItemsCollectionViewController.swift */; };
 		97A6DE87251A9E6000F3BFC7 /* ItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE86251A9E6000F3BFC7 /* ItemsViewModel.swift */; };
 		97A6DE8C251AA08900F3BFC7 /* ItemsResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DE8B251AA08900F3BFC7 /* ItemsResultsController.swift */; };
+		97A6DEA1251B6A9000F3BFC7 /* ItemDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DEA0251B6A9000F3BFC7 /* ItemDetailCollectionViewController.swift */; };
+		97A6DEA9251B6ACC00F3BFC7 /* ItemDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DEA8251B6ACC00F3BFC7 /* ItemDetailViewModel.swift */; };
+		97A6DEAE251B6CB500F3BFC7 /* ItemDetailResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A6DEAD251B6CB500F3BFC7 /* ItemDetailResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		97A6DE81251A9DE100F3BFC7 /* ItemsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewController.swift; sourceTree = "<group>"; };
 		97A6DE86251A9E6000F3BFC7 /* ItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewModel.swift; sourceTree = "<group>"; };
 		97A6DE8B251AA08900F3BFC7 /* ItemsResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsResultsController.swift; sourceTree = "<group>"; };
+		97A6DEA0251B6A9000F3BFC7 /* ItemDetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailCollectionViewController.swift; sourceTree = "<group>"; };
+		97A6DEA8251B6ACC00F3BFC7 /* ItemDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewModel.swift; sourceTree = "<group>"; };
+		97A6DEAD251B6CB500F3BFC7 /* ItemDetailResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 				97A6DE25251A658800F3BFC7 /* SceneDelegate.swift */,
 				97A6DE5D251A68A400F3BFC7 /* MenuView */,
 				97A6DE80251A9DCE00F3BFC7 /* ItemsView */,
+				97A6DE9F251B6A7000F3BFC7 /* ItemDetail */,
 				97A6DE2C251A658800F3BFC7 /* Assets.xcassets */,
 				97A6DE2E251A658800F3BFC7 /* LaunchScreen.storyboard */,
 				97A6DE31251A658800F3BFC7 /* Info.plist */,
@@ -154,6 +161,16 @@
 				97A6DE81251A9DE100F3BFC7 /* ItemsCollectionViewController.swift */,
 			);
 			path = ItemsView;
+			sourceTree = "<group>";
+		};
+		97A6DE9F251B6A7000F3BFC7 /* ItemDetail */ = {
+			isa = PBXGroup;
+			children = (
+				97A6DEA8251B6ACC00F3BFC7 /* ItemDetailViewModel.swift */,
+				97A6DEAD251B6CB500F3BFC7 /* ItemDetailResultsController.swift */,
+				97A6DEA0251B6A9000F3BFC7 /* ItemDetailCollectionViewController.swift */,
+			);
+			path = ItemDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,9 +325,12 @@
 			files = (
 				97A6DE5F251A68C600F3BFC7 /* MenuCollectionViewController.swift in Sources */,
 				97A6DE82251A9DE100F3BFC7 /* ItemsCollectionViewController.swift in Sources */,
+				97A6DEA1251B6A9000F3BFC7 /* ItemDetailCollectionViewController.swift in Sources */,
+				97A6DEAE251B6CB500F3BFC7 /* ItemDetailResultsController.swift in Sources */,
 				97A6DE6F251A6B9400F3BFC7 /* MenuResultsController.swift in Sources */,
 				97A6DE24251A658800F3BFC7 /* AppDelegate.swift in Sources */,
 				97A6DE87251A9E6000F3BFC7 /* ItemsViewModel.swift in Sources */,
+				97A6DEA9251B6ACC00F3BFC7 /* ItemDetailViewModel.swift in Sources */,
 				97A6DE26251A658800F3BFC7 /* SceneDelegate.swift in Sources */,
 				97A6DE67251A6A5D00F3BFC7 /* MenuViewModel.swift in Sources */,
 				97A6DE8C251AA08900F3BFC7 /* ItemsResultsController.swift in Sources */,
